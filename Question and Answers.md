@@ -1,4 +1,4 @@
-<h3> What is the gender breakdown of employees in the company? </h3>
+<h3> 1. What is the gender breakdown of employees in the company? </h3>
     
     SELECT gender, count(*) as count from HR.human group by gender;
     
@@ -25,7 +25,7 @@
   </tbody>
 </table>
 
-<h3> What is the race/ethnicity breakdown of employees in the company? </h3>
+<h3> 2. What is the race/ethnicity breakdown of employees in the company? </h3>
 
     SELECT race, COUNT(*) AS count FROM HR.human GROUP BY race ORDER BY count DESC;
     
@@ -69,7 +69,7 @@
 </table>
 
 
-<h3> What is the age distribution of employees in the company? </h3>
+<h3> 3. What is the age distribution of employees in the company? </h3>
 
      SELECT
       CASE
@@ -169,7 +169,7 @@
   </tbody>
 </table>
 
-<h3> How many employees work at headquarters versus remote locations? </h3>
+<h3> 4. How many employees work at headquarters versus remote locations? </h3>
 
     SELECT location, COUNT(*) AS count FROM HR.human GROUP BY location;
     
@@ -191,5 +191,40 @@
     </tr>
   </tbody>
 </table>
+
+
+<h3> 5. What is the average length of employment for employees who have been terminated? </h3>
+
+        SELECT ROUND(AVG(datediff(termdate, hire_date))/365,0) AS avg_lenght FROM HR.human WHERE termdate <= CURRENT_DATE();
+        
+
+<h3> 6. How does the gender distribution vary across departments and job titles? </h3>
+
+        SELECT department, gender, COUNT(*) AS count FROM HR.human GROUP BY department, gender ORDER BY department;
+
+<h3> 7. What is the distribution of job titles across the company? </h3>
+
+        SELECT jobtitle, COUNT(*) AS count FROM HR.human GROUP BY jobtitle ORDER BY jobtitle DESC;
+
+<h3> 8. Which department has the highest turnover rate? </h3>
+
+        SELECT department, count(*) as total_count,
+          SUM(termdate != '-' AND termdate <= CURRENT_DATE()) as terminated_count,
+          SUM(termdate = '-') AS active_count,
+          (SUM(termdate != '-' AND termdate <= CURRENT_DATE())/count(*)) as termination_rate
+        FROM HR.human GROUP BY department ORDER BY termination_rate ASC;
+
+<h3> 9. What is the distribution of employees across locations by state? </h3>
+
+
+<h3> 10. How has the company's employee count changed over time based on hire and term dates? </h3>
+
+
+<h3> 11. What is the tenure distribution for each department? </h3>
+
+
+
+
+
 
 
