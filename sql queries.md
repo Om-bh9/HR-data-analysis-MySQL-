@@ -265,7 +265,6 @@ Select * from HR.human limit 5;
       UPDATE HR.human SET age = TIMESTAMPDIFF(YEAR, birthdate, CURDATE());
   
   
-  [q3.csv](https://github.com/Om-bh9/HR-data-analysis-MySQL-/files/11817010/q3.csv)
 
   
   
