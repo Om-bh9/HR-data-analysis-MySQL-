@@ -1,7 +1,15 @@
 SELECT * FROM HR.human LIMIT 5;
 
-ALTER TABLE HR.human MODIFY COLUMN birthdate DATE;
+Describe HR.human;
 
+
+<h5>Change birthdate values to date</h5>
+
+I first checked if the value contains a forward slash '/' using the LIKE operator. If it does, I assume the format is '%m/%d/%y' 
+and convert the value using the STR_TO_DATE() and DATE_FORMAT() functions to the '%Y-%m-%d' format. 
+If it contains a dash '-', I assumed the format is '%m-%d-%y' and convert the value to the '%Y-%m-%d' format. 
+If the value does not match either format, we set the birthdate value to NULL.
+  
 UPDATE HR.human
 SET hire_date = CASE
   WHEN hire_date LIKE '%/%' THEN DATE_FORMAT(STR_TO_DATE(hire_date, '%m/%d/%Y'), '%Y-%m-%d')
