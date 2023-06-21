@@ -416,7 +416,7 @@
   </tbody>
 </table>
   
-<h3> 8. Which department has the highest turnover rate? </h3>
+<h3> 7. Which department has the highest turnover rate? </h3>
 
         SELECT department, count(*) as total_count,
           SUM(termdate != '-' AND termdate <= CURRENT_DATE()) as terminated_count,
@@ -526,7 +526,7 @@
 </table>
 
 
-<h3> 9. What is the distribution of employees across locations by state? </h3>
+<h3> 8. What is the distribution of employees across locations by state? </h3>
 
         SELECT location_state, COUNT(*) AS count FROM HR.human GROUP BY location_state ORDER BY count DESC;
 
@@ -566,7 +566,7 @@
 </table>
 
 
-<h3> 10. How has the company's employee count changed over time based on hire and term dates? </h3>
+<h3> 9. How has the company's employee count changed over time based on hire and term dates? </h3>
 
         SELECT YEAR(hire_date) AS year,
         Count(*) as hires,
@@ -733,7 +733,7 @@
 </table>
 
 
-<h3> 11. What is the tenure distribution for each department? </h3>
+<h3> 10. What is the tenure distribution for each department? </h3>
 
         SELECT department, ROUND(AVG(datediff(CURRENT_DATE(),termdate)/365),0) AS AVG_tenure FROM HR.human WHERE termdate != '-' AND termdate <= CURRENT_DATE() GROUP BY department;
 
