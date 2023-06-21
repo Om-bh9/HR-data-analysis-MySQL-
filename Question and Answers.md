@@ -415,597 +415,7 @@
     </tr>
   </tbody>
 </table>
-
-<h3> 7. What is the distribution of job titles across the company? </h3>
-
-        SELECT jobtitle, COUNT(*) AS count FROM HR.human GROUP BY jobtitle ORDER BY jobtitle DESC;
-
-  <table>
-        <tr>
-            <th>Job Title</th>
-            <th>Count</th>
-        </tr>
-        <tr>
-            <td>Web Developer IV</td>
-            <td>66</td>
-        </tr>
-        <tr>
-            <td>Web Developer III</td>
-            <td>69</td>
-        </tr>
-        <tr>
-            <td>Web Developer II</td>
-            <td>74</td>
-        </tr>
-        <tr>
-            <td>Web Developer I</td>
-            <td>95</td>
-        </tr>
-        <tr>
-            <td>Web Designer IV</td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td>Web Designer III</td>
-            <td>13</td>
-        </tr>
-        <tr>
-            <td>Web Designer II</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>Web Designer I</td>
-            <td>34</td>
-        </tr>
-        <tr>
-            <td>VP Sales</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>VP Quality Control</td>
-            <td>43</td>
-        </tr>
-        <tr>
-            <td>VP Product Management</td>
-            <td>39</td>
-        </tr>
-        <tr>
-            <td>VP of Training and Development</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>VP Marketing</td>
-            <td>42</td>
-        </tr>
-        <tr>
-            <td>VP Accounting</td>
-            <td>76</td>
-        </tr>
-        <tr>
-            <td>Training Manager</td>
-            <td>177</td>
-        </tr>
-        <tr>
-            <td>Trainer III</td>
-            <td>173</td>
-        </tr>
-        <tr>
-            <td>Trainer II</td>
-            <td>175</td>
-        </tr>
-        <tr>
-            <td>Trainer I</td>
-            <td>171</td>
-        </tr>
-        <tr>
-            <td>Tax Accountant</td>
-            <td>294</td>
-        </tr>
-        <tr>
-            <td>Systems Administrator IV</td>
-            <td>84</td>
-        </tr>
-        <tr>
-            <td>Systems Administrator III</td>
-            <td>81</td>
-        </tr>
-        <tr>
-            <td>Systems Administrator II</td>
-            <td>66</td>
-        </tr>
-        <tr>
-            <td>Systems Administrator I</td>
-            <td>359</td>
-        </tr>
-        <tr>
-            <td>Support Staff III</td>
-            <td>19</td>
-        </tr>
-        <tr>
-            <td>Support Staff II</td>
-            <td>58</td>
-        </tr>
-        <tr>
-            <td>Support Staff</td>
-            <td>94</td>
-        </tr>
-        <tr>
-            <td>Structural Engineer</td>
-            <td>293</td>
-        </tr>
-        <tr>
-            <td>Structural Analysis Engineer</td>
-            <td>45</td>
-        </tr>
-        <tr>
-            <td>Statistician IV</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>Statistician III</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>Statistician II</td>
-            <td>11</td>
-        </tr>
-        <tr>
-            <td>Statistician I</td>
-            <td>12</td>
-        </tr>
-        <tr>
-            <td>Staff Scientist</td>
-            <td>31</td>
-        </tr>
-        <tr>
-            <td>Staff Accountant IV</td>
-            <td>101</td>
-        </tr>
-        <tr>
-            <td>Staff Accountant III</td>
-            <td>90</td>
-        </tr>
-        <tr>
-            <td>Staff Accountant II</td>
-            <td>77</td>
-        </tr>
-        <tr>
-            <td>Staff Accountant I</td>
-            <td>427</td>
-        </tr>
-        <tr>
-            <td>Solutions Engineer Manager</td>
-            <td>206</td>
-        </tr>
-        <tr>
-            <td>Solutions Engineer</td>
-            <td>204</td>
-        </tr>
-        <tr>
-            <td>Software Test Engineer IV</td>
-            <td>84</td>
-        </tr>
-        <tr>
-            <td>Software Test Engineer III</td>
-            <td>82</td>
-        </tr>
-        <tr>
-            <td>Software Test Engineer II</td>
-            <td>69</td>
-        </tr>
-        <tr>
-            <td>Software Test Engineer I</td>
-            <td>80</td>
-        </tr>
-        <tr>
-            <td>Software Engineer IV</td>
-            <td>88</td>
-        </tr>
-        <tr>
-            <td>Software Engineer III</td>
-            <td>97</td>
-        </tr>
-        <tr>
-            <td>Software Engineer II</td>
-            <td>80</td>
-        </tr>
-        <tr>
-            <td>Software Engineer I</td>
-            <td>378</td>
-        </tr>
-        <tr>
-            <td>Software Consultant</td>
-            <td>327</td>
-        </tr>
-        <tr>
-            <td>Service Tech III</td>
-            <td>319</td>
-        </tr>
-        <tr>
-            <td>Service Tech II</td>
-            <td>315</td>
-        </tr>
-        <tr>
-            <td>Service Tech</td>
-            <td>315</td>
-        </tr>
-        <tr>
-            <td>Service Manager</td>
-            <td>319</td>
-        </tr>
-        <tr>
-            <td>Service Coordinator</td>
-            <td>313</td>
-        </tr>
-        <tr>
-            <td>Senior Trainer</td>
-            <td>176</td>
-        </tr>
-      <tr>
-      <th>Job Title</th>
-      <th>Count</th>
-    </tr>
-    <tr>
-      <td>Senior Sales Associate</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <td>Senior Recruiter</td>
-      <td>193</td>
-    </tr>
-    <tr>
-      <td>Senior Quality Engineer</td>
-      <td>148</td>
-    </tr>
-    <tr>
-      <td>Senior Financial Analyst</td>
-      <td>57</td>
-    </tr>
-    <tr>
-      <td>Senior Editor</td>
-      <td>138</td>
-    </tr>
-    <tr>
-      <td>Senior Developer</td>
-      <td>346</td>
-    </tr>
-    <tr>
-      <td>Senior Cost Accountant</td>
-      <td>301</td>
-    </tr>
-    <tr>
-      <td>Senior Attorney</td>
-      <td>37</td>
-    </tr>
-    <tr>
-      <td>Sales Representative</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>Sales Associate</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>Research Associate</td>
-      <td>201</td>
-    </tr>
-    <tr>
-      <td>Research Assistant IV</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>Research Assistant III</td>
-      <td>18</td>
-    </tr>
-    <tr>
-      <td>Research Assistant II</td>
-      <td>718</td>
-    </tr>
-    <tr>
-      <td>Research Assistant I</td>
-      <td>507</td>
-    </tr>
-    <tr>
-      <td>Research Assistant</td>
-      <td>39</td>
-    </tr>
-    <tr>
-      <td>Relationship Manager</td>
-      <td>201</td>
-    </tr>
-    <tr>
-      <td>Recruiting Manager</td>
-      <td>22</td>
-    </tr>
-    <tr>
-      <td>Recruiter</td>
-      <td>222</td>
-    </tr>
-    <tr>
-      <td>Quality Engineer</td>
-      <td>61</td>
-    </tr>
-    <tr>
-      <td>Quality Control Specialist</td>
-      <td>131</td>
-    </tr>
-    <tr>
-      <td>Project Manager</td>
-      <td>329</td>
-    </tr>
-    <tr>
-      <td>Programmer IV</td>
-      <td>61</td>
-    </tr>
-    <tr>
-      <td>Programmer III</td>
-      <td>78</td>
-    </tr>
-    <tr>
-      <td>Programmer II</td>
-      <td>77</td>
-    </tr>
-    <tr>
-      <td>Programmer I</td>
-      <td>84</td>
-    </tr>
-    <tr>
-      <td>Programmer Analyst IV</td>
-      <td>72</td>
-    </tr>
-    <tr>
-      <td>Programmer Analyst III</td>
-      <td>78</td>
-    </tr>
-    <tr>
-      <td>Programmer Analyst II</td>
-      <td>89</td>
-    </tr>
-    <tr>
-      <td>Programmer Analyst I</td>
-      <td>86</td>
-    </tr>
-    <tr>
-      <td>Product Engineer</td>
-      <td>56</td>
-    </tr>
-    <tr>
-      <td>Pre-Sales Consultant</td>
-      <td>209</td>
-    </tr>
-    <tr>
-      <td>Payment Adjustment Coordinator</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <td>Paralegal</td>
-      <td>63</td>
-    </tr>
-    <tr>
-      <td>Operator</td>
-      <td>210</td>
-    </tr>
-    <tr>
-      <td>Office Assistant IV</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Office Assistant II</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Office Assistant I</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <td>Media Manager II</td>
-      <td>47</td>
-    </tr>
-    <tr>
-      <td>Media Manager I</td>
-      <td>124</td>
-    </tr>
-    <tr>
-      <td>Mechanical Systems Engineer</td>
-      <td>28</td>
-    </tr>
-    <tr>
-      <td>Marketing Manager</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Marketing Assistant</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td>Librarian</td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <td>Legal Assistant</td>
-      <td>19</td>
-    </tr>
-    <tr>
-      <td>Senior Sales Associate</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <td>Senior Recruiter</td>
-      <td>193</td>
-    </tr>
-    <tr>
-      <td>Senior Quality Engineer</td>
-      <td>148</td>
-    </tr>
-    <tr>
-      <td>Senior Financial Analyst</td>
-      <td>57</td>
-    </tr>
-    <tr>
-      <td>Senior Editor</td>
-      <td>138</td>
-    </tr>
-    <tr>
-      <td>Senior Developer</td>
-      <td>346</td>
-    </tr>
-    <tr>
-      <td>Senior Cost Accountant</td>
-      <td>301</td>
-    </tr>
-    <tr>
-      <td>Senior Attorney</td>
-      <td>37</td>
-    </tr>
-    <tr>
-      <td>Sales Representative</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>Sales Associate</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>Research Associate</td>
-      <td>201</td>
-    </tr>
-    <tr>
-      <td>Research Assistant IV</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>Research Assistant III</td>
-      <td>18</td>
-    </tr>
-    <tr>
-      <td>Research Assistant II</td>
-      <td>718</td>
-    </tr>
-    <tr>
-      <td>Research Assistant I</td>
-      <td>507</td>
-    </tr>
-    <tr>
-      <td>Research Assistant</td>
-      <td>39</td>
-    </tr>
-    <tr>
-      <td>Relationship Manager</td>
-      <td>201</td>
-    </tr>
-    <tr>
-      <td>Recruiting Manager</td>
-      <td>22</td>
-    </tr>
-    <tr>
-      <td>Recruiter</td>
-      <td>222</td>
-    </tr>
-    <tr>
-      <td>Quality Engineer</td>
-      <td>61</td>
-    </tr>
-    <tr>
-      <td>Quality Control Specialist</td>
-      <td>131</td>
-    </tr>
-    <tr>
-      <td>Project Manager</td>
-      <td>329</td>
-    </tr>
-    <tr>
-      <td>Programmer IV</td>
-      <td>61</td>
-    </tr>
-    <tr>
-      <td>Programmer III</td>
-      <td>78</td>
-    </tr>
-    <tr>
-      <td>Programmer II</td>
-      <td>77</td>
-    </tr>
-    <tr>
-      <td>Programmer I</td>
-      <td>84</td>
-    </tr>
-    <tr>
-      <td>Programmer Analyst IV</td>
-      <td>72</td>
-    </tr>
-    <tr>
-      <td>Programmer Analyst III</td>
-      <td>78</td>
-    </tr>
-    <tr>
-      <td>Programmer Analyst II</td>
-      <td>89</td>
-    </tr>
-    <tr>
-      <td>Programmer Analyst I</td>
-      <td>86</td>
-    </tr>
-    <tr>
-      <td>Product Engineer</td>
-      <td>56</td>
-    </tr>
-    <tr>
-      <td>Pre-Sales Consultant</td>
-      <td>209</td>
-    </tr>
-    <tr>
-      <td>Payment Adjustment Coordinator</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <td>Paralegal</td>
-      <td>63</td>
-    </tr>
-    <tr>
-      <td>Operator</td>
-      <td>210</td>
-    </tr>
-    <tr>
-      <td>Office Assistant IV</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Office Assistant II</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Office Assistant I</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <td>Media Manager II</td>
-      <td>47</td>
-    </tr>
-    <tr>
-      <td>Media Manager I</td>
-      <td>124</td>
-    </tr>
-    <tr>
-      <td>Mechanical Systems Engineer</td>
-      <td>28</td>
-    </tr>
-    <tr>
-      <td>Marketing Manager</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Marketing Assistant</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td>Librarian</td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <td>Legal Assistant</td>
-      <td>19</td>
-    </tr> 
-
+  
 <h3> 8. Which department has the highest turnover rate? </h3>
 
         SELECT department, count(*) as total_count,
@@ -1014,9 +424,147 @@
           (SUM(termdate != '-' AND termdate <= CURRENT_DATE())/count(*)) as termination_rate
         FROM HR.human GROUP BY department ORDER BY termination_rate ASC;
 
+<table>
+  <tr>
+    <th>Department</th>
+    <th>Total Count</th>
+    <th>Terminated Count</th>
+    <th>Active Count</th>
+    <th>Termination Rate</th>
+  </tr>
+  <tr>
+    <td>Marketing</td>
+    <td>480</td>
+    <td>43</td>
+    <td>410</td>
+    <td>0.0896</td>
+  </tr>
+  <tr>
+    <td>Business Development</td>
+    <td>1569</td>
+    <td>146</td>
+    <td>1307</td>
+    <td>0.0931</td>
+  </tr>
+  <tr>
+    <td>Support</td>
+    <td>903</td>
+    <td>92</td>
+    <td>732</td>
+    <td>0.1019</td>
+  </tr>
+  <tr>
+    <td>Product Management</td>
+    <td>623</td>
+    <td>65</td>
+    <td>512</td>
+    <td>0.1043</td>
+  </tr>
+  <tr>
+    <td>Services</td>
+    <td>1618</td>
+    <td>170</td>
+    <td>1337</td>
+    <td>0.1051</td>
+  </tr>
+  <tr>
+    <td>Engineering</td>
+    <td>6387</td>
+    <td>681</td>
+    <td>5259</td>
+    <td>0.1066</td>
+  </tr>
+  <tr>
+    <td>Sales</td>
+    <td>1745</td>
+    <td>186</td>
+    <td>1426</td>
+    <td>0.1066</td>
+  </tr>
+  <tr>
+    <td>Accounting</td>
+    <td>3192</td>
+    <td>346</td>
+    <td>2626</td>
+    <td>0.1084</td>
+  </tr>
+  <tr>
+    <td>Human Resources</td>
+    <td>1727</td>
+    <td>190</td>
+    <td>1430</td>
+    <td>0.1100</td>
+  </tr>
+  <tr>
+    <td>Research and Development</td>
+    <td>1032</td>
+    <td>114</td>
+    <td>830</td>
+    <td>0.1105</td>
+  </tr>
+  <tr>
+    <td>Training</td>
+    <td>1622</td>
+    <td>187</td>
+    <td>1338</td>
+    <td>0.1153</td>
+  </tr>
+  <tr>
+    <td>Legal</td>
+    <td>299</td>
+    <td>38</td>
+    <td>237</td>
+    <td>0.1271</td>
+  </tr>
+  <tr>
+    <td>Auditing</td>
+    <td>50</td>
+    <td>8</td>
+    <td>38</td>
+    <td>0.1600</td>
+  </tr>
+</table>
+
+
 <h3> 9. What is the distribution of employees across locations by state? </h3>
 
         SELECT location_state, COUNT(*) AS count FROM HR.human GROUP BY location_state ORDER BY count DESC;
+
+<table>
+  <tr>
+    <th>Location State</th>
+    <th>Count</th>
+  </tr>
+  <tr>
+    <td>Ohio</td>
+    <td>17252</td>
+  </tr>
+  <tr>
+    <td>Pennsylvania</td>
+    <td>1066</td>
+  </tr>
+  <tr>
+    <td>Illinois</td>
+    <td>833</td>
+  </tr>
+  <tr>
+    <td>Indiana</td>
+    <td>666</td>
+  </tr>
+  <tr>
+    <td>Michigan</td>
+    <td>650</td>
+  </tr>
+  <tr>
+    <td>Kentucky</td>
+    <td>417</td>
+  </tr>
+  <tr>
+    <td>Wisconsin</td>
+    <td>363</td>
+  </tr>
+</table>
+
 
 <h3> 10. How has the company's employee count changed over time based on hire and term dates? </h3>
 
@@ -1027,11 +575,226 @@
         ROUND(((count(*)- SUM(termdate != '-' AND termdate <= CURRENT_DATE()))/ count(*) * 100),2) AS net_change_percent
         FROM HR.human GROUP BY YEAR(hire_date) ORDER BY YEAR(hire_date) ASC;
 
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Hires</th>
+    <th>Terminated Count</th>
+    <th>Net Change</th>
+    <th>Net Change Percent</th>
+  </tr>
+  <tr>
+    <td>2000</td>
+    <td>211</td>
+    <td>26</td>
+    <td>185</td>
+    <td>87.68</td>
+  </tr>
+  <tr>
+    <td>2001</td>
+    <td>1082</td>
+    <td>197</td>
+    <td>885</td>
+    <td>81.79</td>
+  </tr>
+  <tr>
+    <td>2002</td>
+    <td>1012</td>
+    <td>161</td>
+    <td>851</td>
+    <td>84.09</td>
+  </tr>
+  <tr>
+    <td>2003</td>
+    <td>1088</td>
+    <td>187</td>
+    <td>901</td>
+    <td>82.81</td>
+  </tr>
+  <tr>
+    <td>2004</td>
+    <td>1087</td>
+    <td>190</td>
+    <td>897</td>
+    <td>82.52</td>
+  </tr>
+  <tr>
+    <td>2005</td>
+    <td>1038</td>
+    <td>166</td>
+    <td>872</td>
+    <td>84.01</td>
+  </tr>
+  <tr>
+    <td>2006</td>
+    <td>1069</td>
+    <td>166</td>
+    <td>903</td>
+    <td>84.47</td>
+  </tr>
+  <tr>
+    <td>2007</td>
+    <td>1058</td>
+    <td>134</td>
+    <td>924</td>
+    <td>87.33</td>
+  </tr>
+  <tr>
+    <td>2008</td>
+    <td>1061</td>
+    <td>135</td>
+    <td>926</td>
+    <td>87.28</td>
+  </tr>
+  <tr>
+    <td>2009</td>
+    <td>1094</td>
+    <td>139</td>
+    <td>955</td>
+    <td>87.29</td>
+  </tr>
+  <tr>
+    <td>2010</td>
+    <td>1050</td>
+    <td>117</td>
+    <td>933</td>
+    <td>88.86</td>
+  </tr>
+  <tr>
+    <td>2011</td>
+    <td>1057</td>
+    <td>105</td>
+    <td>952</td>
+    <td>90.07</td>
+  </tr>
+  <tr>
+    <td>2012</td>
+    <td>1059</td>
+    <td>101</td>
+    <td>958</td>
+    <td>90.46</td>
+  </tr>
+  <tr>
+    <td>2013</td>
+    <td>1042</td>
+    <td>86</td>
+    <td>956</td>
+    <td>91.75</td>
+  </tr>
+  <tr>
+    <td>2014</td>
+    <td>1014</td>
+    <td>80</td>
+    <td>934</td>
+    <td>92.11</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>1011</td>
+    <td>68</td>
+    <td>943</td>
+    <td>93.27</td>
+  </tr>
+  <tr>
+    <td>2016</td>
+    <td>1076</td>
+    <td>61</td>
+    <td>1015</td>
+    <td>94.33</td>
+  </tr>
+  <tr>
+    <td>2017</td>
+    <td>1043</td>
+    <td>46</td>
+    <td>997</td>
+    <td>95.59</td>
+  </tr>
+  <tr>
+    <td>2018</td>
+    <td>1090</td>
+    <td>41</td>
+    <td>1049</td>
+    <td>96.24</td>
+  </tr>
+  <tr>
+    <td>2019</td>
+    <td>1038</td>
+    <td>41</td>
+    <td>997</td>
+    <td>96.05</td>
+  </tr>
+  <tr>
+    <td>2020</td>
+    <td>967</td>
+    <td>19</td>
+    <td>948</td>
+    <td>98.04</td>
+  </tr>
+</table>
+
+
 <h3> 11. What is the tenure distribution for each department? </h3>
 
         SELECT department, ROUND(AVG(datediff(CURRENT_DATE(),termdate)/365),0) AS AVG_tenure FROM HR.human WHERE termdate != '-' AND termdate <= CURRENT_DATE() GROUP BY department;
 
-
+<table>
+  <tr>
+    <th>Department</th>
+    <th>AVG Tenure</th>
+  </tr>
+  <tr>
+    <td>Engineering</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Services</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Human Resources</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Business Development</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Sales</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Auditing</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>Training</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Accounting</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Research and Development</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Product Management</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Support</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Legal</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>Marketing</td>
+    <td>7</td>
+  </tr>
+</table>
 
 
 
