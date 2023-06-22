@@ -264,7 +264,19 @@ Select * from HR.human limit 5;
       ALTER TABLE HR.human ADD COLUMN age INT;
       UPDATE HR.human SET age = TIMESTAMPDIFF(YEAR, birthdate, CURDATE());
   
-  
+ #removing null values of termdate
+
+      UPDATE HR.human SET termdate = '-' WHERE termdate = '';
+
+ #Adding age column (Using birthyear)
+
+      ALTER TABLE HR.human ADD COLUMN age INT;
+      UPDATE HR.human SET age = TIMESTAMPDIFF(YEAR, birthdate, CURDATE());
+
+
+ #Removing records where age is below 18 or has negative values
+
+       DELETE FROM HR.human where age < 18;
 
   
   
