@@ -418,112 +418,113 @@
   
 <h3> 7. Which department has the highest turnover rate? </h3>
 
-        SELECT department, count(*) as total_count,
-          SUM(termdate != '-' AND termdate <= CURRENT_DATE()) as terminated_count,
-          SUM(termdate = '-') AS active_count,
-          (SUM(termdate != '-' AND termdate <= CURRENT_DATE())/count(*)) as termination_rate
-        FROM HR.human GROUP BY department ORDER BY termination_rate ASC;
+        SELECT department, COUNT(*) AS total_count,
+          SUM(CASE WHEN termdate ='-' THEN 1 ELSE 0 END) AS active_count,
+          (Count(*) - SUM(CASE WHEN termdate ='-' THEN 1 ELSE 0 END)) AS terminated_count,
+          (((Count(*) - SUM(CASE WHEN termdate ='-' THEN 1 ELSE 0 END))/COUNT(*))*100) AS termination_rate
+        FROM HR.human GROUP BY department ORDER BY termination_rate DESC;
 
 <table>
   <tr>
     <th>Department</th>
     <th>Total Count</th>
-    <th>Terminated Count</th>
     <th>Active Count</th>
+    <th>Terminated Count</th>
     <th>Termination Rate</th>
-  </tr>
-  <tr>
-    <td>Marketing</td>
-    <td>480</td>
-    <td>43</td>
-    <td>410</td>
-    <td>0.0896</td>
-  </tr>
-  <tr>
-    <td>Business Development</td>
-    <td>1569</td>
-    <td>146</td>
-    <td>1307</td>
-    <td>0.0931</td>
-  </tr>
-  <tr>
-    <td>Support</td>
-    <td>903</td>
-    <td>92</td>
-    <td>732</td>
-    <td>0.1019</td>
-  </tr>
-  <tr>
-    <td>Product Management</td>
-    <td>623</td>
-    <td>65</td>
-    <td>512</td>
-    <td>0.1043</td>
-  </tr>
-  <tr>
-    <td>Services</td>
-    <td>1618</td>
-    <td>170</td>
-    <td>1337</td>
-    <td>0.1051</td>
-  </tr>
-  <tr>
-    <td>Engineering</td>
-    <td>6387</td>
-    <td>681</td>
-    <td>5259</td>
-    <td>0.1066</td>
-  </tr>
-  <tr>
-    <td>Sales</td>
-    <td>1745</td>
-    <td>186</td>
-    <td>1426</td>
-    <td>0.1066</td>
-  </tr>
-  <tr>
-    <td>Accounting</td>
-    <td>3192</td>
-    <td>346</td>
-    <td>2626</td>
-    <td>0.1084</td>
-  </tr>
-  <tr>
-    <td>Human Resources</td>
-    <td>1727</td>
-    <td>190</td>
-    <td>1430</td>
-    <td>0.1100</td>
-  </tr>
-  <tr>
-    <td>Research and Development</td>
-    <td>1032</td>
-    <td>114</td>
-    <td>830</td>
-    <td>0.1105</td>
-  </tr>
-  <tr>
-    <td>Training</td>
-    <td>1622</td>
-    <td>187</td>
-    <td>1338</td>
-    <td>0.1153</td>
-  </tr>
-  <tr>
-    <td>Legal</td>
-    <td>299</td>
-    <td>38</td>
-    <td>237</td>
-    <td>0.1271</td>
   </tr>
   <tr>
     <td>Auditing</td>
     <td>50</td>
-    <td>8</td>
     <td>38</td>
-    <td>0.1600</td>
+    <td>12</td>
+    <td>24.00</td>
+  </tr>
+  <tr>
+    <td>Legal</td>
+    <td>299</td>
+    <td>237</td>
+    <td>62</td>
+    <td>20.73</td>
+  </tr>
+  <tr>
+    <td>Research and Development</td>
+    <td>1032</td>
+    <td>830</td>
+    <td>202</td>
+    <td>19.57</td>
+  </tr>
+  <tr>
+    <td>Support</td>
+    <td>903</td>
+    <td>732</td>
+    <td>171</td>
+    <td>18.93</td>
+  </tr>
+  <tr>
+    <td>Sales</td>
+    <td>1745</td>
+    <td>1426</td>
+    <td>319</td>
+    <td>18.28</td>
+  </tr>
+  <tr>
+    <td>Product Management</td>
+    <td>623</td>
+    <td>512</td>
+    <td>111</td>
+    <td>17.81</td>
+  </tr>
+  <tr>
+    <td>Accounting</td>
+    <td>3192</td>
+    <td>2626</td>
+    <td>566</td>
+    <td>17.73</td>
+  </tr>
+  <tr>
+    <td>Engineering</td>
+    <td>6387</td>
+    <td>5259</td>
+    <td>1128</td>
+    <td>17.66</td>
+  </tr>
+  <tr>
+    <td>Training</td>
+    <td>1622</td>
+    <td>1338</td>
+    <td>284</td>
+    <td>17.50</td>
+  </tr>
+  <tr>
+    <td>Services</td>
+    <td>1618</td>
+    <td>1337</td>
+    <td>281</td>
+    <td>17.36</td>
+  </tr>
+  <tr>
+    <td>Human Resources</td>
+    <td>1727</td>
+    <td>1430</td>
+    <td>297</td>
+    <td>17.19</td>
+  </tr>
+  <tr>
+    <td>Business Development</td>
+    <td>1569</td>
+    <td>1307</td>
+    <td>262</td>
+    <td>16.69</td>
+  </tr>
+  <tr>
+    <td>Marketing</td>
+    <td>480</td>
+    <td>410</td>
+    <td>70</td>
+    <td>14.58</td>
   </tr>
 </table>
+
 
 
 <h3> 8. What is the distribution of employees across locations by state? </h3>
