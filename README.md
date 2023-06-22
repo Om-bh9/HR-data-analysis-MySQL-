@@ -5,6 +5,7 @@ Data - HR Data with over 22000 rows from the year 2000 to 2020.
 Data Cleaning & Analysis - MySQL, Microsoft Azure Data Studio. 
 <br>
 Data Visualisation - Tableau
+https://public.tableau.com/views/HR_16873718078910/Dashboard1?:language=en-GB&:display_count=n&:origin=viz_share_link
 
 <h2>Questions:</h2>
 
